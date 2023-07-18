@@ -34,7 +34,7 @@ def cadastrar_aluno(conexao, nome, data_nascimento, cidade_natal, bairro):
     cursor = conexao.cursor()
     
     inserir_query = '''
-        INSERT INTO aluno (nome, data_nascimento, cidade_natal, bairro)
+        INSERT INTO aluno(nome, data_nascimento, cidade_natal, bairro)
         VALUES (%s, %s, %s, %s)
     '''
 
